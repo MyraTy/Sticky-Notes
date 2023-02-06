@@ -16,7 +16,7 @@ def writenotes(user, dir_, note, remember=None, overwrite=False):
         notes = open("C:/Users/{user}/{dir_}/Sticky Notes/data/notes/notes.ntdb".format(user=user, dir_=dir_), mode="a", encoding="utf8")
         
     text = notes.read()
-    if text = "||||":
+    if text == "||||":
         notes.close()
         notes = open("C:/Users/{user}/{dir_}/Sticky Notes/data/notes/notes.ntdb".format(user=user, dir_=dir_), mode="w", encoding="utf8")
         overwrite = True
